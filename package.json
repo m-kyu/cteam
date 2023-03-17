@@ -32,5 +32,11 @@
   },
   "devDependencies": {
     "prisma": "^4.11.0"
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   }
 }
