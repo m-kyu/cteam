@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "title": "내가 더 잘할수있는 집안일은?",
+        "answera": "분리수거하기",
+        "answerb": "청소하기",
+        "keywordag": "분리수거하기",
+        "keywordab": "분리수거하기",
+        "keywordbg": "청소하기",
+        "keywordbb": "청소하기"
+    },
+    {
+        "id": 2,
+        "title": "내가 더 잘할수있는 집안일은?",
+        "answera": "요리하기",
+        "answerb": "설거지하기",
+        "keywordag": "요리하기",
+        "keywordab": "요리하기",
+        "keywordbg": "설거지하기",
+        "keywordbb": "설거지하기"
+    },
+    {
+        "id": 3,
+        "title": "내가 더 잘할수있는 집안일은?",
+        "answera": "음식물쓰레기 버리기",
+        "answerb": "화장실 청소하기",
+        "keywordag": "음식물쓰레기 버리기",
+        "keywordab": "음식물쓰레기 버리기",
+        "keywordbg": "화장실 청소하기",
+        "keywordbb": "화장실 청소하기"
+    },
+    {
+        "id": 4,
+        "title": "쓰레기가 생기면?",
+        "answera": "몰아서 치우기",
+        "answerb": "눈에 보이면 당장 치우기",
+        "keywordag": "한방에",
+        "keywordab": "한방에",
+        "keywordbg": "지금 당장",
+        "keywordbb": "지금 당장"
+    },
+    {
+        "id": 5,
+        "title": "일하고 와서 저녁밥은?",
+        "answera": "직접 해 먹기",
+        "answerb": "배달시키기",
+        "keywordag": "내가 요리사",
+        "keywordab": "내가 요리사",
+        "keywordbg": "남이 요리사",
+        "keywordbb": "남이 요리사"
+    },
+    {
+        "id": 6,
+        "title": "밥 먹을때 뭐가 더 싫어?",
+        "answera": "쩝쩝 소리내면서 먹기",
+        "answerb": "질질 흘리면서 먹기",
+        "keywordag": "청각 예민",
+        "keywordab": "청각 예민",
+        "keywordbg": "시각 예민",
+        "keywordbb": "시각 예민"
+    },
+    {
+        "id": 7,
+        "title": "아침밥은?",
+        "answera": "간단히 먹기",
+        "answerb": "잘 차려 먹기",
+        "keywordag": "아침 선택",
+        "keywordab": "아침 선택",
+        "keywordbg": "아침 필수",
+        "keywordbb": "아침 필수"
+    },
+    {
+        "id": 8,
+        "title": "주말에는?",
+        "answera": "외출하기",
+        "answerb": "집콕하기",
+        "keywordag": "집순이",
+        "keywordab": "집돌이",
+        "keywordbg": "밖순이",
+        "keywordbb": "밖돌이"
+    },
+    {
+        "id": 9,
+        "title": "더 좋아하는 계절은?",
+        "answera": "여름",
+        "answerb": "겨울",
+        "keywordag": "온미녀",
+        "keywordab": "온미남",
+        "keywordbg": "냉미녀",
+        "keywordbb": "냉미남"
+    },
+    {
+        "id": 10,
+        "title": "일 끝나고 집에 들어오면 나는?",
+        "answera": "집에 오면 바로 씻기",
+        "answerb": "자기 전에 씻기",
+        "keywordag": "부지런",
+        "keywordab": "부지런",
+        "keywordbg": "여유",
+        "keywordbb": "여유"
+    },
+    {
+        "id": 11,
+        "title": "서로 다른 취미를 가진 우리는?",
+        "answera": "같이 공유하기",
+        "answerb": "각자 알아서 즐기기",
+        "keywordag": "내껌딱지",
+        "keywordab": "내껌딱지",
+        "keywordbg": "개취존중",
+        "keywordbb": "개취존중"
+    },
+    {
+        "id": 12,
+        "title": "기념일에 받고싶은 선물은?",
+        "answera": "마음이 담긴 꽃이나 편지",
+        "answerb": "실용적인 선물이나 현물",
+        "keywordag": "마음담긴 선물",
+        "keywordab": "마음담긴 선물",
+        "keywordbg": "실용적인 선물",
+        "keywordbb": "실용적인 선물"
+    },
+    {
+        "id": 13,
+        "title": "아이를 낳게 된다면?",
+        "answera": "딸",
+        "answerb": "아들",
+        "keywordag": "딸바보엄마",
+        "keywordab": "딸바보아빠",
+        "keywordbg": "아들바보엄마",
+        "keywordbb": "아들바보아빠"
+    }
+]

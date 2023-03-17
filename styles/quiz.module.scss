@@ -1,0 +1,601 @@
+$border: 4px solid #000;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+    
+
+div.intro{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: url('/img/quiz/introBack.png');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    .bbu{
+        position: absolute;
+        top: 190px;
+        left: 550px;
+        animation: bbumove 1.5s forwards;
+    }
+    .front{
+        position: absolute;
+        bottom: -129px;
+        left: 0;
+    }
+}
+main.main{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: #83B3E8;
+    .result{
+        display: block;
+        max-width: 1800px;
+        margin: 0 auto;
+        padding-top: 30px;
+        position: relative;
+        .computer{
+            background: url("/img/quiz/computer.png");
+            width: 1400px;
+            height: 894px;
+            margin: 0 auto;
+            position: relative;
+            .icon{
+                display: flex;
+                position: absolute;
+                bottom: 220px;
+                right: 60px;
+                img{
+                    margin-left: 25px;
+                    animation: bing 2s linear infinite;
+                    &:nth-child(2){
+                        animation: bingbing 3s linear infinite;
+                    }
+                    &:nth-child(3){
+                        animation: bing 2.5s linear infinite;
+                    }
+                }
+            }
+            > button{
+                position: absolute;
+                top: 17%;
+                left: 50%;
+                background: transparent;
+                border: none;
+                .resultContainer{
+                    position: absolute;
+                    top: 17%;
+                    right: 50%;
+                    transform: translateX(50%);
+                    p{
+                        position: absolute;
+                        top: 38%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-family: 'Inter', sans-serif;
+                        font-size: 50px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        width: 400px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .vase{
+            position: relative;
+            bottom: 0;
+            left: 4%;
+            .rstem{
+                position: absolute;
+                bottom: 250px;
+                left: 120px;
+            }
+            .lstem{
+                position: absolute;
+                bottom: 270px;
+                left: 0;
+            }
+            .fvase{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .rflower{
+                position: absolute;
+                bottom: 440px;
+                left: -60px;
+                animation: bigupdown 1s alternate infinite;
+            }
+            .lflower{
+                position: absolute;
+                bottom: 515px;
+                left: 160px;
+                animation: smallupdown 1s alternate infinite;
+
+            }
+        }
+        .candle{
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+        }
+        .post{
+            position: absolute;
+            right: 1%;
+            top: 25%;
+            width: 385px;
+            height: 265px;
+            border: $border;
+            background-color: #f6cf34;
+            transform: rotate(12deg);
+            padding: 50px 22px 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            h2{
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            p{
+                margin-bottom: 10px;
+                margin-right: 15px;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 00;
+                line-height: 18px;
+            }
+        }
+    }
+    .last{
+        display: none;
+    }
+}
+
+main.noneResult{
+    .result{
+        display: none;
+    }
+    .last{
+        display: block;
+        max-width: 1800px;
+        margin: 0 auto;
+        padding-top: 30px;
+        position: relative;
+        .computer{
+            background: url("/img/quiz/computer.png");
+            width: 1400px;
+            height: 894px;
+            margin: 0 auto;
+            position: relative;
+            .icon{
+                display: flex;
+                position: absolute;
+                bottom: 220px;
+                right: 60px;
+                img{
+                    margin-left: 25px;
+                    animation: bing 2s linear infinite;
+                    &:nth-child(2){
+                        animation: bingbing 3s linear infinite;
+                    }
+                    &:nth-child(3){
+                        animation: bing 2.5s linear infinite;
+                    }
+                }
+            }
+            .resultContainer{
+                position: absolute;
+                top: 17%;
+                right: 50%;
+                transform: translateX(50%);
+                p{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-family: 'Inter', sans-serif;
+                    font-size: 50px;
+                    font-weight: 700;
+                    line-height: 50px;
+                    width: 400px;
+                    text-align: center;
+                }
+            }
+        }
+        .vase{
+            position: relative;
+            bottom: 0;
+            left: 4%;
+            .rstem{
+                position: absolute;
+                bottom: 250px;
+                left: 120px;
+            }
+            .lstem{
+                position: absolute;
+                bottom: 270px;
+                left: 0;
+            }
+            .fvase{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .rflower{
+                position: absolute;
+                bottom: 440px;
+                left: -60px;
+                animation: bigupdown 1s alternate infinite;
+            }
+            .lflower{
+                position: absolute;
+                bottom: 515px;
+                left: 160px;
+                animation: smallupdown 1s alternate infinite;
+
+            }
+        }
+        .candle{
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+        }
+        .post{
+            position: absolute;
+            right: 1%;
+            top: 25%;
+            width: 385px;
+            height: 265px;
+            border: $border;
+            background-color: #f6cf34;
+            transform: rotate(12deg);
+            padding: 50px 22px 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            h2{
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            p{
+                margin-bottom: 10px;
+                margin-right: 15px;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 00;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+main.main{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: #83B3E8;
+    div.back{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        div.container{ 
+            height: 100%;
+            width: 100%;
+            section.start{
+                max-width: 1800px;
+                margin: 0 auto;
+                padding-top: 30px;
+                position: relative;
+                .computer{
+                    background: url("/img/quiz/computer.png");
+                    width: 1400px;
+                    height: 894px;
+                    margin: 0 auto;
+                    position: relative;
+                    .icon{
+                        display: flex;
+                        position: absolute;
+                        bottom: 220px;
+                        right: 60px;
+                        img{
+                            margin-left: 25px;
+                            animation: bing 2s linear infinite;
+                            &:nth-child(2){
+                                animation: bingbing 3s linear infinite;
+                            }
+                            &:nth-child(3){
+                                animation: bing 2.5s linear infinite;
+                            }
+                        }
+                    }
+                    .hscreen{
+                        position: absolute;
+                        right: 47%;
+                        top: 24%;
+                    }
+                    .screen{
+                        position: absolute;
+                        right: 18%;
+                        top: 17%;
+                        p{
+                            position: absolute;
+                            left: 50%;
+                            top: 60%;
+                            transform: translate(-50%, -50%);
+                            font-family: 'Inter', sans-serif;
+                            font-size: 75px;
+                            font-weight: 700;
+                            line-height: 75px;
+                            width: 440px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .vase{
+                    position: relative;
+                    bottom: 0;
+                    left: 4%;
+                    .rstem{
+                        position: absolute;
+                        bottom: 250px;
+                        left: 120px;
+                    }
+                    .lstem{
+                        position: absolute;
+                        bottom: 270px;
+                        left: 0;
+                    }
+                    .fvase{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    .rflower{
+                        position: absolute;
+                        bottom: 440px;
+                        left: -60px;
+                        animation: bigupdown 1s alternate infinite;
+                    }
+                    .lflower{
+                        position: absolute;
+                        bottom: 515px;
+                        left: 160px;
+                        animation: smallupdown 1s alternate infinite;
+
+                    }
+                }
+                .candle{
+                    position: absolute;
+                    left: 20%;
+                    bottom: 0;
+                }
+                .post{
+                    position: absolute;
+                    right: 1%;
+                    top: 25%;
+                    width: 385px;
+                    height: 265px;
+                    border: $border;
+                    background-color: #f6cf34;
+                    transform: rotate(12deg);
+                    position: absolute;
+                    h2{
+                        position: absolute;
+                        top: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            .balance{
+                display: none;
+            }
+        }
+        div.noneContainer{
+            .start{
+                display: none;
+            }
+            .balance{
+                display: block;
+                max-width: 1800px;
+                margin: 0 auto;
+                padding-top: 30px;
+                position: relative;
+                .computer{
+                    background: url("/img/quiz/computer.png");
+                    width: 1400px;
+                    height: 894px;
+                    margin: 0 auto;
+                    position: relative;
+                    .icon{
+                        display: flex;
+                        position: absolute;
+                        bottom: 220px;
+                        right: 60px;
+                        img{
+                            margin-left: 25px;
+                            animation: bing 2s linear infinite;
+                            &:nth-child(2){
+                                animation: bingbing 3s linear infinite;
+                            }
+                            &:nth-child(3){
+                                animation: bing 2.5s linear infinite;
+                            }
+                        }
+                    }
+                    h2{
+                        position: absolute;
+                        top: 18%;
+                        left: 52%;
+                        transform: translateX(-50%);
+                        font-family: 'Inter', sans-serif;
+                        font-size: 40px;
+                        font-weight: 700;
+                        line-height: 50px;
+                    }
+                    .screen{
+                        display: flex;
+                        width: 800px;
+                        justify-content: space-between;
+                        margin: 0 auto;
+                        position: absolute;
+                        top: 28%;
+                        left: 24%;
+                        div{
+                            width: 360px;
+                            height: 190px;
+                            border: $border;
+                            background-color: #206EB0;
+                            button{
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 146px;
+                                margin-top: 40px;
+                                background-color: #fff;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 40px;
+                                font-weight: 700;
+                                line-height: 50px;
+                                border:none;
+                                border-top: $border;
+                                border-bottom: $border;
+                            }
+                            &:active{
+                                background-color: #FBD61C;
+                            }
+                        }
+                    }
+                }
+                .vase{
+                    position: relative;
+                    bottom: 0;
+                    left: 4%;
+                    .rstem{
+                        position: absolute;
+                        bottom: 250px;
+                        left: 120px;
+                    }
+                    .lstem{
+                        position: absolute;
+                        bottom: 270px;
+                        left: 0;
+                    }
+                    .fvase{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    .rflower{
+                        position: absolute;
+                        bottom: 440px;
+                        left: -60px;
+                        animation: bigupdown 1s alternate infinite;
+                    }
+                    .lflower{
+                        position: absolute;
+                        bottom: 515px;
+                        left: 160px;
+                        animation: smallupdown 1s alternate infinite;
+
+                    }
+                }
+                .candle{
+                    position: absolute;
+                    left: 20%;
+                    bottom: 0;
+                }
+                .post{
+                    position: absolute;
+                    right: 1%;
+                    top: 25%;
+                    width: 385px;
+                    height: 265px;
+                    border: $border;
+                    background-color: #f6cf34;
+                    transform: rotate(12deg);
+                    padding: 50px 22px 0;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    position: absolute;
+                    h2{
+                        position: absolute;
+                        top: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    p{
+                        margin-bottom: 10px;
+                        margin-right: 15px;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 15px;
+                        font-weight: 00;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes bbumove {
+    0%{
+        top: 190px;
+    }
+    40%{
+        top: 50px;
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate((10deg));
+    }
+    60%{
+        transform: rotate(-10deg);
+    }
+    90%{
+        transform: rotate(0deg);
+        top: 50px;
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+@keyframes bing {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bingbing {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes bigupdown {
+    0%{
+        bottom: 440px;
+    }
+    100%{
+        bottom: 460px;
+    }
+}
+
+@keyframes smallupdown {
+    0%{
+        bottom: 515px;
+    }
+    100%{
+        bottom: 525px;
+    }
+}

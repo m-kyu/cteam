@@ -1,0 +1,130 @@
+$border: 4px solid #000;
+
+section.note{
+    width: 60vw;
+    height: 65vh;
+    border: $border;
+    background-color: #FFFDC7;
+    margin: 50px auto 0px auto;
+    position: relative;
+    form{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    
+        input.textInput{
+            width: 340px; 
+            border: $border;
+            border-radius: 15px; 
+            margin-right: 15px;
+            padding: 0px 5px;       
+        }
+        input.submitInput{
+            width: 70px;
+            height: 45px;
+            border: $border;
+            border-radius: 15px;
+            background-color: #000;
+            color: #FFFFFF;
+            font-size: 16.5px;
+        }
+    }
+
+
+    div.textBox{
+        width: 50vw;
+        height: 45vh;
+        overflow-y: auto;
+        margin: 0px auto;
+
+        &::-webkit-scrollbar {
+            width: 7px;  /* 스크롤바의 너비 */
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 10px; /* 스크롤바의 길이 */
+            background: #000000; /* 스크롤바의 색상 */
+            
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background: rgba(247, 250, 255, 0.393);  /*스크롤바 뒷 배경 색상*/
+        }
+    }
+
+   
+
+
+    div.textList{
+        padding: 18px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+        
+        div.check{
+            display: flex;
+        }
+        div.btnBox{
+            display: flex;
+            
+            button{
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    div.buttonBox{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: -100px;
+        align-items: center;
+        button{
+            width: 45px;
+            height: 45px;
+            border: $border;
+            border-radius: 50%;
+            margin-bottom: 13px;
+            transition: 300ms;
+            &:hover{
+                transform: scale(1.08);
+            }
+            &:nth-child(1){
+                background-color: #FFFDC7;
+            }
+            &:nth-child(2){
+                background-color: #FFD1C7;
+            }
+            &:nth-child(3){
+                background-color: #E2FFE5;
+            }
+            &:nth-child(4){
+                background-color: #ade5ec;
+            }
+            &:nth-child(5){
+                background-color: #D8C1FF;
+            }
+            &:nth-child(6){
+                background-color: #FFFFFF;
+            }
+            
+        }
+    }
+    .bbubbubbu{
+        position: absolute;
+        bottom: 25px;
+        z-index: -1;
+        right: -120px;
+    }
+}
+
+div.line{
+    position: absolute;
+    bottom: 200px;
+    z-index: -1;
+}
+
+.checked{
+    display: none;
+}

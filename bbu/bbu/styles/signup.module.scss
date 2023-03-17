@@ -1,0 +1,214 @@
+.SignupPage {
+    width: 568px;
+    // height: 800px;
+    border: 3px solid;
+    margin: 258px auto 50px;
+    border-radius: 50px;
+    background-color: #FDFBE6;
+    font-weight: 900;
+    font-size: large;
+
+    .smile {
+        position: absolute;
+        width: 568px;
+        height: 50px;
+
+        img {
+            position: absolute;
+            top: -43px;
+            right: 42%;
+        }
+    }
+
+    label {
+        padding: 5px 0;
+    }
+
+    .Logo {
+        text-align: center;
+        height: 60px;
+        position: absolute;
+        top: 183px;
+        left: 0;
+        width: 100%;
+        min-width: 600px;
+
+        h1 {
+            width: 300px;
+            margin: 0 auto;
+            border: 3px solid;
+            padding: 10px 0;
+        }
+    }
+
+    form {
+        // border: 1px solid;
+        margin: 0px 50px;
+        padding: 60px 0 100px 0;
+
+        .Name {
+            margin: 20px 0;
+
+            button {
+                background-color: #79A5FF;
+                height: 45px;
+                width: 80px;
+                border-radius: 20px;
+                border: 3px solid;
+                margin-left: 30px;
+                padding: 0;
+                font-weight: 900;
+                font-size: medium;
+            }
+        }
+
+        .Email {
+            margin: 20px 0;
+        }
+
+        .password {
+            margin: 20px 0;
+        }
+
+        .passwordChack {
+            margin: 20px 0;
+        }
+
+        .nickname {
+            margin: 20px 0;
+
+            button {
+                background-color: #79A5FF;
+                height: 45px;
+                width: 80px;
+                border-radius: 20px;
+                border: 3px solid;
+                margin-left: 30px;
+                padding: 0;
+                font-weight: 900;
+                font-size: medium;
+            }
+        }
+
+        input {
+            border: 3px solid;
+            width: 350px;
+            height: 45px;
+            margin-top: 5px;
+            padding: 10px;
+        }
+
+        .Gender {
+            margin: 20px 0;
+
+            p {
+                margin-bottom: 5px;
+            }
+
+            .genbtn {
+                display: flex;
+                justify-content: space-between
+            }
+
+            input {
+                width: 222px;
+                height: 48px;
+                background-color: white;
+                border: 3px solid;
+                border-radius: 30px;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: #F7D2FF;
+                }
+
+            }
+
+            .btn {
+                background-color: white;
+            }
+
+            .btn.active {
+                background-color: #F7D2FF;
+            }
+        }
+
+        .d_day {
+            margin: 20px 0;
+
+
+            .ddaycont {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 100%;
+
+                input {
+                    width: 48%;
+                }
+
+                button {
+                    width: 48%;
+                    height: 45px;
+                    background-color: white;
+                    border: 3px solid;
+                    font-weight: 900;
+                    font-size: medium;
+
+                    &:hover {
+                        background-color: #FF9C40;
+                    }
+
+                }
+
+                .bttn {
+                    background-color: #FF9C40;
+                }
+
+                .bttn.active {
+                    background-color: white;
+                }
+            }
+
+            .ddaycont.active {
+                visibility: hidden;
+            }
+        }
+
+        .profile {
+            margin: 20px 0;
+
+            .proCont {
+                display: flex;
+                gap: 14px;
+                justify-content: space-between;
+
+                .left {
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        border: 3px solid;
+                        border-radius: 60px;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border: 3px solid;
+                        border-radius: 30px;
+                    }
+                }
+            }
+
+            .proCont.active {
+                display: none;
+            }
+        }
+    }
+}
